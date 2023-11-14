@@ -97,4 +97,11 @@ public class WordCounter {
 	    }
 		return retVal;
     }
+	 public double kDensity(String keyword) throws IOException{
+    		int totalWords = content.split("\\s+").length;
+    		double kDensity = (double)countKeyword(keyword)/totalWords;
+    		return kDensity;
+    	
+    }
+    
 }
